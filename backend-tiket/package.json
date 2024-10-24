@@ -1,0 +1,27 @@
+{
+  "name": "backend-tiket",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "deploy": "npx hardhat run scripts/deploy.js --network localhost"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@pinata/sdk": "^1.2.1",
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ethers": "^5.6.0",
+    "express": "^4.21.1",
+    "express-fileupload": "^1.5.1",
+    "form-data": "^4.0.1",
+    "multer": "^1.4.5-lts.1",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "hardhat": "^2.17.1"
+  }
+}

@@ -1,0 +1,40 @@
+const accountBalance = await econsole.log(ethers.utils.formatEther(accountBalance), "ET
+const accountAddress = "0xcd3b766ccdd6ae721141f452c550ca635964ce71"; 
+const accountBalance = await ethers.providconsole.log(ethers.utils.formatEther(accountBalance), "ETH");
+const accou4ce71";
+// Ganti dengan alamat akun yang tepat
+console.log(ethers.utils.formatEther(accountBalance), "ETH");
+consconst accountBalance = await ethers.provider.getBa);
+const balance = await ethers.provider.getBalance("0xcd3b766ccdd6ae721141f452c550ca635964ce71");
+console.log(ethers.utils.formatEther(balance), "ETH");
+const balance = await ethers.provider.getBalance("your-account-address");
+console.log(ethers.utils.formatEther(balance), "ETH");
+const balance = await ethers.provider.getBalance("your-account-address");
+a
+console.log("Tiket berhasil dibuat!");
+await tx.wait(); // Tunggu transaksi selesai
+const tx = await contract.createTicket(eventName, eventOrganizer, posterUrl, ticketImageUrl, priceInWei, saleEnd, eventDateTimestamp, barcode);
+// Buat tiket
+const barcode = Math.floor(Math.random() * 1e12); // Barcode acak
+const eventDateTimestamp = Math.floor(Date.now() / 1000) + 7200; // 2 jam dari sekarang
+const saleEnd = Math.floor(Date.now() / 1000) + 3600; // 1 jam dari sekarang
+const priceInWei = ethers.utils.parseEther("0.1"); // Harga 0.1 ETHers
+const ticketImageUrl = "https://example.com/ticket.jpg";
+const posterUrl = "https://example.com/poster.jpg";
+const eventOrganizer = "Penyelenggara Acara";
+const eventName = "Konser Band";
+// Siapkan data tiket
+const contract = await ethers.gete1Bb143E90bb3F0512");
+// Ambil kontrak
+console.log("Tiket berhasil dibuat!");
+await tx.wait();
+eventName, eventOrganizer, posterUrl, ticketImageUrl, priceInWei, saleEnd, eventDateTimestamp, barcode);
+const tx = await contract.createTicket(
+const eventDateTimestamp = Mconst barcode = Math.floor(Math.random() * 1e12);
+const saleEnd = Math.floor(Date.now() / 1000) + 3600; // 1 jam dari sekarang
+priceInWei = ethers.utils.parseEther("0.1");
+const 
+const ticketImageUrl = "https://example.com/ticket.jpg";
+const eventconst posterUrl = "https://example.com/poster.jpg";
+const eventName = "Konser Band";
+const contract = await ethers.getContractAt("TicketSale", "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512");

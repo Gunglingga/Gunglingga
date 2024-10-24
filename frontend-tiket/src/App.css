@@ -1,0 +1,146 @@
+/* Reset dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f0f0f0; /* Latar belakang lembut */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Pusatkan konten dalam container */
+  flex-wrap: wrap;
+}
+
+/* Panel untuk formulir dan daftar tiket */
+.panel {
+  padding: 20px;
+  background-color: #ffffff; /* Latar belakang putih untuk panel */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+  border-radius: 8px; /* Sudut melingkar untuk panel */
+  margin: 10px; /* Tambahkan margin untuk jarak antar panel */
+}
+
+/* Gaya untuk formulir pembuatan penjualan */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Jarak antara elemen formulir */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 500px; /* Maksimal lebar formulir */
+  margin: 0 auto; /* Pusatkan formulir */
+}
+
+/* Gaya untuk label input */
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin-bottom: 5px; /* Perpendek jarak margin bawah */
+}
+
+/* Gaya untuk input dan textarea */
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="datetime-local"],
+input[type="file"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+/* Gaya untuk input file */
+input[type="file"] {
+  padding: 0;
+}
+
+/* Gaya untuk teks keterangan */
+small {
+  color: #666;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Gaya untuk tombol */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #0056b3; /* Ubah warna saat hover */
+}
+
+/* Gaya untuk pratinjau gambar */
+img {
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* Gaya untuk memperbesar poster pada daftar tiket */
+.ticket-list img {
+  width: 100%; /* Poster akan memenuhi lebar container */
+  max-width: 300px; /* Tetapkan lebar maksimal */
+  height: auto;
+  border-radius: 8px; /* Tambahkan sudut melingkar */
+  border: 1px solid #ddd; /* Tambahkan border untuk mempertegas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk kedalaman */
+  margin: 20px auto; /* Jarak dan posisi tengah */
+}
+
+/* Media query untuk perangkat kecil */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .panel {
+      max-width: 100%;
+      margin-bottom: 20px; /* Spasi antara panel */
+  }
+}
+
+/* Spesifik untuk mengatur posisi panel */
+.form-panel {
+  margin-left: auto; /* Pindahkan formulir ke kanan */
+  max-width: 60%; /* Atur lebar maksimum formulir */
+}
+
+.ticket-list-panel {
+  max-width: 500px; /* Atur lebar maksimum daftar tiket */
+  margin: 0 70px 0 0; /* Pusatkan daftar tiket */
+}
+
+/* Gaya untuk menampilkan alamat dan saldo di kiri */
+.user-info {
+  flex: 1;
+  max-width: 40%; /* Maksimal lebar untuk informasi pengguna */
+  margin-right: 20px; /* Spasi antara user info dan panel lainnya */
+}
