@@ -1,0 +1,13 @@
+version: '2.0'
+applications:
+  app:
+    type: "php:8.0"  # Ubah sesuai dengan bahasa dan versi yang Anda gunakan
+    root: "frontend-tiket"  # Ubah dengan direktori aplikasi Anda
+    build:
+      commands:
+        - npm install  # Ubah jika Anda menggunakan build tool lain
+    web:
+      locations:
+        /:
+          root: "public"  # Ubah dengan direktori output aplikasi Anda
+          passthru: true
